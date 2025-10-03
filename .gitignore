@@ -1,0 +1,6 @@
+.vercel
+node_modules
+.env
+/lib/generated/prisma
+
+.vercel
