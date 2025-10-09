@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../../../assets/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Correo" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="login-btn">Acceder</button>
+            <div class="register-link">
+                <a href="../inicio/registro.html">Registrarse</a>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        const form = document.getElementById('login-form');
+    
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Evita el envío por defecto del formulario
+    
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+    
+            try {
+                // Envía los datos al servidor
+                const response = await fetch('http://localhost:3000/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email, password })
+                });
+    
+                const result = await response.json();
+    
+                if (response.ok) {
+                    alert('Inicio de sesión exitoso!');
+                    // los dirije a la página principal si el login fue exitoso
+                    window.location.href = '../../usuario/inicio/home.html'; 
+                } else {
+                    alert('Error al iniciar sesión: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Ocurrió un error al intentar iniciar sesión.');
+            }
+        });
+    </script>
+</body>
+</html>

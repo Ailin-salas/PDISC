@@ -14,7 +14,6 @@ const EnviarMensaje = async (UserEmail, UserName) => {
             </a>
         `,
     };
-
     try {
         await transporter.sendMail(mailOptions);
         console.log("Email enviado correctamente");

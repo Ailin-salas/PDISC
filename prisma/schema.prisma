@@ -13,3 +13,63 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+//Modelo para la entidad USUARIO
+model Usuario {
+      id_usuario    Int      @id @default(autoincrement()) @map("id_usuario")
+      email         String?  @unique
+      nombre        String
+      password   String?  @map("password")
+      ELO           Int?
+isGuest Boolean   @default(false) @map("isGuest")
+
+      torneosCreados  Torneo[]
+      inscripciones   Inscripcion[]
+      @@map("USUARIO")
+    }
+
+// Modelo para la entidad TORNEOS
+model Torneo {
+      id_torneo    Int      @id @default(autoincrement()) @map("id_torneo")
+      nombre       String
+      fecha_inicio DateTime @map("fecha_inicio")
+      reglas       String?
+      premios      String?
+      tipo_torneo  String?
+
+      creadorId    Int      @map("creador_id")
+      creador      Usuario  @relation(fields: [creadorId], references: [id_usuario])
+
+      partidas     Partida[]
+      inscripciones Inscripcion[]
+
+      @@map("TORNEOS")
+    }
+
+//Modelo para la entidad PARTIDA
+ model Partida {
+      id_partida    Int      @id @default(autoincrement()) @map("id_partida")
+      resultado     String?
+      fecha_partida DateTime @map("fecha_partida")
+
+      torneoId      Int      @map("torneo_id")
+      torneo        Torneo   @relation(fields: [torneoId], references: [id_torneo])
+
+      @@map("PARTIDA")
+    }
+
+
+
+model Inscripcion {
+  id_inscripcion Int      @id @default(autoincrement()) @map("id_inscripcion")
+  usuarioId      Int      @map("usuario_id")
+  torneoId       Int      @map("torneo_id")
+  fecha_inscripcion DateTime @default(now()) @map("fecha_inscripcion")
+
+  usuario        Usuario  @relation(fields: [usuarioId], references: [id_usuario])
+  torneo         Torneo   @relation(fields: [torneoId], references: [id_torneo])
+
+  @@unique([usuarioId, torneoId])
+  @@map("INSCRIPCION")
+}
+

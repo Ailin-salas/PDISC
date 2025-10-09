@@ -1,19 +1,39 @@
 {
-  "name": "mi-proyecto",
+  "name": "pdisc",
   "version": "1.0.0",
-  "main": "/Server.js",
+  "description": "Este es el proyecto final MAPTV",
   "type": "module",
+  "main": "Server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "Server.js",
+    "start": "Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ailin-salas/PDISC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ailin-salas/PDISC/issues"
+  },
+  "homepage": "https://github.com/Ailin-salas/PDISC#readme",
   "dependencies": {
-    "@prisma/client": "^6.16.3",
+    "@prisma/client": "^6.17.0",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
+    "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "nanoid": "^5.1.6",
     "nodemailer": "^7.0.6",
-    "vercel": "^48.1.7"
+    "vercel": "^41.0.2"
   },
   "devDependencies": {
-    "prisma": "^6.16.3"
+    "prisma": "^6.17.0"
   }
 }

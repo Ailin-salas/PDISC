@@ -1,9 +1,8 @@
 import express from 'express';
-import { PrismaClient } from '@prisma/client';
+import prisma from '../lib/prisma.js';
 import verifyToken from '../middlewares/auth.js';
 
 const router = express.Router();
-const prisma = new PrismaClient();
 
 // Middleware para manejar excepciones en promesas asincrónicas
 const asyncHandler = fn => (req, res, next) => {

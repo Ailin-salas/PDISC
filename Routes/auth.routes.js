@@ -1,7 +1,6 @@
-import bcrypt from 'bcrypt';
+import prisma from '../lib/prisma.js';
 import jwt from 'jsonwebtoken';
 import { Router } from "express";
-import prisma from "../lib/prisma.js";
 import EnviarMensaje from '../services/emails.js';
 import { nanoid } from 'nanoid';
 
