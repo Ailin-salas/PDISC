@@ -4,7 +4,7 @@ export async function MenuDespegable() {
    link.rel = 'stylesheet';
    link.href = 'https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap'; // URL de Google Fonts 
    document.head.appendChild(link);
-  
+try{ 
   const res = await fetch('/Public/assets/js/modulos/menu/JSON_menu/menu.json'); // Ruta al archivo JSON
   const links = await res.json(); // Obtener los enlaces del menú desde el archivo JSON, await es para esperar la respuesta de la promesa
 
@@ -30,7 +30,7 @@ export async function MenuDespegable() {
 
   const nav = document.createElement("nav");
    nav.classList.add("menu-ul"); // Clase CSS para la navegación del menú
-   nav.style.display = "none"; // Ocultar el menú inicialmente
+   nav.style.display = "none"; // Ocultar el menú inicialmente 
 
   for(let i=0; i < links.menu.length; i++){
     const li = document.createElement("li"); 
@@ -79,6 +79,7 @@ export async function MenuDespegable() {
   }
   btnRegistro.addEventListener("click", Registro);
 
-} 
-
- 
+}catch(error){
+  console.error("Error al cargar el menú:", error);
+}
+}
