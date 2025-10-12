@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+
+body {
+    min-height: 100vh; /*Asegura que el cuerpo ocupe al menos la altura completa de la ventana*/
+    display: flex; 
+    flex-direction: column; /*Permite que el footer se mantenga al final*/
+    background: #4822c3;
+    background: linear-gradient(0deg, rgba(72, 34, 195, 1) 0%, rgba(245, 105, 191, 1) 100%);
+    color: white;
+    font-family: 'Amarante', cursive;
+}
+main {
+    flex: 1 0 auto; /*Permite que el main crezca y ocupe el espacio disponible*/
+}
+.text {
+   font-size: 2rem;
+}

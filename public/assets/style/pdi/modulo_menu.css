@@ -1,0 +1,47 @@
+/*importa las fuente de google*/
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+
+.header { 
+ background: #000000;
+ border: 1px solid #000000;
+}
+.menu-despegable{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+
+.button-menu{
+ color: #ffff;
+ font-size: 30px;
+ border: none;
+ background: none;
+ cursor: pointer;
+
+}
+
+.btn-registro{
+ margin-left: 20px;
+ padding: 8px 16px;
+ font-size: 16px;
+ background-color: #c0f0e8ff;
+ border-radius:  60px;
+}
+.btn-registro:hover{
+   background-color: #7ff1e3ff;
+}
+.menu-nav{
+  display: none;
+  gap: 20px;
+}
+.menu-item{
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  font-family: "amarante";
+  font-size: 16px;
+  margin: 0 15px;
+
+}.menu-item:hover{
+  color: #460361;
+}

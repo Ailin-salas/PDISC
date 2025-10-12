@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+
+body {
+    background-image: url('https://user-images.githubusercontent.com/12555355/157297920-03207019-9140-420a-8d26-17b5b5465c19.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background: #4822c3;
+    background: linear-gradient(0deg, rgba(72, 34, 195, 1) 0%, rgba(245, 105, 191, 1) 100%);
+    color: white;
+    font-family: 'Amarante', cursive;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    filter: drop-shadow(4px 4px 6px black); /* Sombra al texto*/ 
+}   
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.425);
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+.section-box {
+    background: linear-gradient(135deg, rgba(23, 44, 52, 0.8), rgba(6, 17, 21, 0.8)); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.25);
+    color: white;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+}
+
+/* Nuevos estilos para la caja de subida de imagen */
+.upload-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed #999;
+    color: #999;
+    cursor: pointer; /* Indica que es clickeable */
+    display: flex; /* Para centrar contenido */
+    flex-direction: column; /* Para apilar contenido */
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    min-height: 200px; /* Altura mínima para que sea visible */
+    overflow: hidden; /* Para que la imagen no se salga */
+}
+
+.upload-box img {
+    max-width: 100%;
+    max-height: 180px; /* Limita la altura de la previsualización */
+}

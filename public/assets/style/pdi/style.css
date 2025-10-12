@@ -1,0 +1,180 @@
+/* Importa las fuentes de google */
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap');
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #2F073B 30%, #315646 70%); 
+    margin: 0;
+    padding: 0;
+} 
+.rectangle-1 {
+	background: #000000;
+	border: 1px solid #000000;
+}
+.map-tv {
+	color: rgb(255, 255, 255);
+	font-family: "Amarante", cursive;
+	font-weight: 400;
+	font-size: 40px;
+}
+.logo-img{
+	background-color: #315646;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+.lista li a {
+	text-decoration: none;
+}
+.lista {
+	text-decoration: none;
+	list-style: none;
+	color:#098b6b;
+	font-weight: bold;
+	font-size: 26px;
+	gap: 25px;
+}
+.button-1 {
+	padding: 0px 10px;
+	background: linear-gradient(180deg, #C6AED1 4%, #2F073B 75%); 
+	border: 1px solid #232323; 
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+}
+.terminos{
+	text-decoration: none;
+}
+.-rea-de-texto-1 {
+	padding: 4px 8px;
+	box-shadow: 0px 4px 4px #471879;
+	color: #009688;
+	font-family: "Staatliches";
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 1.3;
+	text-align: center;
+}
+.-rea-de-texto-1:hover{
+ color: #05d3be;
+}
+.imagenes {
+    width: 400px;
+    height: 300px;
+	border-radius: 30px;
+}
+.enlace-8, .enlace-5, .enlace-6, .enlace-7 {
+	color: #7D4AB3;
+	font-family: "Staatliches";
+	font-weight: 400;
+	font-size: 15px;
+	text-decoration: underline;
+}
+.button-2 {
+	padding: 0px 10px;
+	background: linear-gradient(180deg, #C6AFD0 0%, #2F073B 75%);
+	border: 1px solid #232323;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+}
+.torneos-activos-1 {
+	color: #09090B;
+	font-family: "Staatliches";
+	font-weight: 400;
+	font-size: 40px;
+}
+.rectangle-2 {
+	background: #09090B;
+	border: 1px solid #000000;
+	border-radius: 20px;
+}
+.col-1{
+    height: 40%;
+    width: 100%;
+}
+.rect-ngulo-3{
+    display: flex; 
+    background: #2F073B;
+	border: 1px solid transparent;
+	border-radius: 15px;
+   gap: 40%;
+}
+.rect-ngulo-7, .rect-ngulo-8 {
+	background: #2F073B;
+	border: 1px solid transparent;
+	border-radius: 15px;
+}
+.rect-ngulo-7, .rect-ngulo-8 {
+    border-radius: 32px;
+}
+.nombre-del-torneo-1, .nombre-del-torneo-2, .nombre-del-torneo-3 {
+	color: #C0C0C0;
+	font-family: "Staatliches";
+	font-weight: 400;
+	font-size: 20px;
+}
+.categoria, .categoria-1, .categoria-2 {
+	color: #009688;
+	font-family: "Staatliches";
+	font-weight: 400;
+	font-size: 15px;
+}
+.bot-n-3, .bot-n-4, .bot-n-5 {
+	padding: 0px 10px;
+	box-shadow: -4px 5px 4px #00000029;
+	background: #CE93D8;
+	border: 1px solid #232323;
+	border-radius: 9px;
+	color: #232323;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+.noticias-1 {
+	color: #09090B;
+	font-family: "Staatliches";
+	font-weight: 400;
+	font-size: 20px;
+}
+.rectangle-5 {
+	background: #09090B;
+	border: 1px solid transparent;
+	border-radius: 20px;
+}
+.marcador-de-posici-n-de-imagen-3, .marcador-de-posici-n-de-imagen-4 {
+	border-radius: 15px;
+}
+.lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-1, .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-2 {
+	color: #C0C0C0;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 8px;
+	line-height: 1.3;
+}
+.rectangle-9 {
+	background: #000000;
+	border: 1px solid transparent;
+}
+.entrada-de-texto-10, .entrada-de-texto-12, .entrada-de-texto-11 {
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	color: #B3B3B3;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+}
+.-maptv-1 {
+	color: #B3B3B3;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}

@@ -22,7 +22,7 @@ app.use(logger); // Aplica el middleware a todas las rutas
 
 // Ruta para servir la página de inicio
 app.get('/', (req, res) => {
-  res.sendFile('pages/usuario/inicio/index.html', { root: 'public' });
+  res.sendFile('pages/usuarios/inicios/index.html', { root: 'public' });
 });
 
 // Rutas de autenticación

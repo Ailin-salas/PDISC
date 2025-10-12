@@ -1,0 +1,49 @@
+/* Fondo del hero */
+.hero {
+  background: url("https://via.placeholder.com/1200x400") center/cover no-repeat;
+  height: 300px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+/* Botón personalizado */
+.btn-custom {
+  background: #CE93D8;
+  border: none;
+  color: #232323;
+  font-weight: bold;
+  border-radius: 16px;
+  padding: 10px 20px;
+}
+
+/* Tarjetas personalizadas */
+.bg-custom {
+  background: #2F073B;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Ranking */
+.ranking {
+  background: #000;
+  border-radius: 30px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #444;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero {
+    height: 200px;
+  }
+  .btn-custom {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #315646 30%, #291936 70%); 
+    margin: 0;
+    padding: 0;
+} 
+.h1{
+    font-family: sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+.h3{
+    font-size: "Amarante", cursive;
+    color: #FFFFFF;
+}
+p{
+    color: aliceblue;
+    
+}

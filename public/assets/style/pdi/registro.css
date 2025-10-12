@@ -1,0 +1,84 @@
+/* Importar fuente personalizada, si es necesario */
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap');
+
+/* Estilos para la interfaz de registro */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background-container {
+    background-image: url('../imagenes/gta-5-franklin-with-dog-z2tn2r7zotkcr0oq.jpg');
+    background-size: cover;
+    background-position: center 30%; /* Ajuste para centrar el personaje */
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form {
+    background: rgba(255, 255, 255, 0.4); /* Fondo blanco con 40% de opacidad */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Ajusta el ancho */
+}
+
+.registration-form h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px; /* Bordes más redondeados */
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input::placeholder {
+    color: #666;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #ddd;
+}
+
+.login-link {
+    margin-top: 20px;
+    color: #333;
+}
+
+.login-link a {
+    color: #d20e0e; /* Color del enlace */
+    text-decoration: none;
+    font-weight: bold;
+}

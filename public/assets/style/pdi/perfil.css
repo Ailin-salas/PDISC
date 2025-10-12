@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #1c1c1c, #2f073b);
+  font-family: Helvetica, sans-serif;
+}
+
+.avatar-1 {
+  width: 75px;
+  height: 75px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #444;
+}
+
+.button-1, .button-2, .button-3, .button-4 {
+  background: #CBB4D4;
+  color: #232323;
+  border-radius: 16px;
+  border: 1px solid #232323;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rectangle-3, .rectangle-4, .rectangle-5, .rectangle-6 {
+  border-radius: 20px;
+}
+
+.comunidades {
+  font-family: "Staatliches", cursive;
+  font-size: 28px;
+  color: #fff;
+}
