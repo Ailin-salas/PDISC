@@ -1,3 +1,4 @@
+// Maneja el envío del formulario de registro
 const form = document.getElementById('registro-form');
 
     form.addEventListener('submit', async (e) => {

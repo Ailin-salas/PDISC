@@ -1,15 +1,25 @@
 {
-  "name": "pdi",
+  "name": "pdisc",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Este es el proyecto final MAPTV",
   "type": "module",
+  "main": "Server.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "Server.js",
+    "start": "Server.js",
+    "build": "prisma generate && prisma migrate deploy"    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/Ailin-salas/PDISC/issues"
+  },
+  "homepage": "https://github.com/Ailin-salas/PDISC#readme",
   "dependencies": {
     "@prisma/client": "^6.12.0",
     "bcrypt": "^6.0.0",

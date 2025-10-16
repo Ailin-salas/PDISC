@@ -1,0 +1,20 @@
+{
+    "menu": [
+        {
+        "nombre": "INICIO",
+        "enlace": "/pages/usuarios/inicios/home.html"
+        },
+        {
+        "nombre": "TORNEO ",
+        "enlace": "/pages/torneo/vista_torneo/index.html"
+        },
+        {
+        "nombre": "NOTICIAS",
+        "enlace": "/pages/usuarios/noticias/servicio.html"
+        },
+         {
+        "nombre": "PERFIL",
+        "enlace": "/pages/usuarios/perfil/perfil.html"
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+/* Importa las fuentes de google */
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+body {
+    font-family: "amarante";
+    background: linear-gradient(to right, #9aebee 30%, #569177 70%); 
+    margin: 0;
+    padding: 0;
+} 
+.texto-1{
+	padding: 4px 8px;
+	box-shadow: 0px 4px 4px #471879;
+	color: #019284de;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 1.3;
+	text-align: center;
+	&:hover{
+     color: #fff;
+	 text-shadow:  /*shadow es para añadir efectos de sombra al texto*/
+	 0 0 5px #fff, 
+	 0 0 20px #00f,
+	 0 0 40px #AA00ff;
+    }
+}
+.imagenes {
+    width: 400px;
+    height: 300px;
+	border-radius: 30px;
+}
+.enlaces{
+	color: #7D4AB3;
+	font-weight: 400;
+	font-size: 15px;
+	text-decoration: underline; /* underline es para subrayar el texto*/
+}
+.button-2 {
+	padding: 0px 10px;
+	background: linear-gradient(180deg, #C6AFD0 0%, #2F073B 75%);
+	border: 1px solid #232323;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+}
+.torneos-activos-1 {
+	color: #09090B;
+	font-family: "Staatliches";
+	font-weight: 400;
+	font-size: 40px;
+}
+.rectangle-2 {
+	background: #09090B;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	opacity: 0.9;
+}
+.rect-toneos{
+    display: flex; 
+    background: #2F073B;
+	border: 1px solid transparent;
+	border-radius: 15px;
+	opacity: 0.9;
+    gap: 30%;
+}
+.torneo {
+    color: #C0C0C0;
+    font-weight: 400;
+    font-size: 20px;
+}
+.categoria{
+    color: #009688;
+    font-weight: 400;
+    font-size: 15px;
+}
+.bot-n{
+	padding: 0px 10px;
+	box-shadow: -4px 5px 4px #00000029;
+	background: #CE93D8;
+	border: 1px solid #232323;
+	border-radius: 9px;
+	color: #232323;
+	font-weight: bold;
+	font-size: 16px;
+}
+.noticias-1 {
+	color: #09090B;
+	font-family: "Staatliches";
+	font-weight: 400;
+	font-size: 40px;
+}
+.rectangle-5 {
+	background: #09090B;
+	border: 1px solid transparent;
+	border-radius: 20px;	
+	opacity: 0.9;
+}
+.rect-noticas{
+    background: #2F073B;
+    border: 1px solid transparent;
+    border-radius: 32px;
+}
+.img {
+	border-radius: 15px;
+}
+.texto_noticias{
+	color: #C0C0C0;
+	font-weight: 400;
+	font-size: 8px;
+	line-height: 1.3;
+}

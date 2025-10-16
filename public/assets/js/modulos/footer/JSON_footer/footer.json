@@ -1,0 +1,16 @@
+{
+    "enlace":[
+        {
+            "nombre": "Términos y condiciones",
+            "url": "/pages/usuarios/politicas/Terminos-condiciones.html"
+        },
+        {
+            "nombre": "contactenos",
+            "url": "mailto:?subject=Consulta&body=Hola,%20tengo%maruccimatias5@gmail.com20una%20pregunta."
+        },
+        {
+            "nombre": "Politicas de uso",
+            "url": "/assets/js/modulos/footer/JSON_footer/pdf/Manual_Gestion_Torneos_MAPTV.pdf"
+        }
+    ]
+}

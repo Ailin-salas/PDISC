@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+
+body {
+    font-family: "amarante";
+    background: linear-gradient(to right, #9aebee 30%, #559177 70%); 
+    margin: 0;
+    padding: 0;
+} 
+.imagen{
+    height: 300px; 
+    width: 500px;
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px #471879;
+}
+.btn{
+   border-radius: 30px;
+   background-color: darkorchid;
+}
+.text-t{
+    color: #019284de;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.3;
+    text-align: center;
+}
+.rectangle-5 {
+	background: #09090B;
+	border: 1px solid transparent;
+	border-radius: 20px;	
+	opacity: 0.9;
+}
+.rect-noticas{
+    background: #2F073B;
+    border: 1px solid transparent;
+    border-radius: 32px;
+}
+.img {
+	border-radius: 15px;
+}
+.texto_noticias{
+	color: #C0C0C0;
+	font-weight: 400;
+	font-size: 8px;
+	line-height: 1.3;
+}
+.bot-n{
+	padding: 0px 10px;
+	box-shadow: -4px 5px 4px #00000029;
+	background: #CE93D8;
+	border: 1px solid #232323;
+	border-radius: 9px;
+	color: #232323;
+	font-weight: bold;
+	font-size: 16px;
+}

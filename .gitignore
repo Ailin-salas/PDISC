@@ -1,4 +1,11 @@
-node_module/ 
+.vercel
+node_modules
+.env
+/lib/generated/prisma
 
-/generated/prisma
-.env 
+.vercel
+
+/lib/generated/prisma
+
+/lib/generated/prisma
+

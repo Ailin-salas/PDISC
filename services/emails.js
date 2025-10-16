@@ -1,5 +1,4 @@
 import transporter from "../lib/email.js";
-
 const EnviarMensaje = async (UserEmail, UserName) => {
     const mailOptions = {
         from: process.env.EMAIL_USER,
@@ -14,7 +13,6 @@ const EnviarMensaje = async (UserEmail, UserName) => {
             </a>
         `,
     };
-
     try {
         await transporter.sendMail(mailOptions);
         console.log("Email enviado correctamente");

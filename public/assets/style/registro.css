@@ -1,0 +1,62 @@
+/* Importa las fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+body {
+    background-color: #f0f2f5; /* Fondo opcional para toda la página */
+}
+
+/* Estilos de tus clases */
+.fifa, .fifa-1 {
+	opacity: 0.8;
+    width: 100%; /* Ajuste para que la imagen sea responsiva */
+    height: auto;
+}
+
+.map-tv-1 {
+	color: #FFFFFF;
+	font-family: "Amarante", cursive;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.rectangle-1 {
+    width: 100%; /* El contenedor ahora ocupa el ancho total de la columna de Bootstrap */
+    background: #2F073B;
+    border: 2px solid #000000;
+    border-radius: 8px; /* Un valor más común para tarjetas */
+}
+
+.inicio-de-sesion {
+	color: #FFFFFF;
+	font-family: "Helvetica", sans-serif;
+	font-weight: 400;
+	font-size: 26px;
+}
+
+.text-input-3, .text-input-4 {
+	background: #FFFFFF;
+	border: 1px solid #232323;
+	border-radius: 3px;
+	color: #C0C0C0;
+	font-family: "Helvetica", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.bootstrap-red-button-normal-2 {
+	background: #CBB4D4;
+	border: 1px solid #CBB4D4;
+	border-radius: 6px;
+	color: #FFFFFF;
+	font-family: "Helvetica", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.link-3, .link-4 {
+	color: #929292;
+	font-family: "Helvetica", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: underline;
+}

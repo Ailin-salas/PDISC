@@ -1,3 +1,4 @@
+// Maneja el envío del formulario de creación de torneo
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
     const imageUpload = document.getElementById('imageUpload');
