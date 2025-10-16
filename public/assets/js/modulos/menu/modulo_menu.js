@@ -5,7 +5,7 @@ export async function MenuDespegable() {
    link.href = 'https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap'; // URL de Google Fonts 
    document.head.appendChild(link);
 try{ 
-  const res = await fetch('/Public/assets/js/modulos/menu/JSON_menu/menu.json'); // Ruta al archivo JSON
+  const res = await fetch('/assets/js/modulos/menu/JSON_menu/menu.json'); // Ruta al archivo JSON
   const links = await res.json(); // Obtener los enlaces del menú desde el archivo JSON, await es para esperar la respuesta de la promesa
 
   const header = document.querySelector("header");

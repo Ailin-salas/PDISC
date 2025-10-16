@@ -2,15 +2,15 @@
     "enlace":[
         {
             "nombre": "Términos y condiciones",
-            "url": "/Public/pages/usuarios/politicas/Terminos-condiciones.html"
+            "url": "/pages/usuarios/politicas/Terminos-condiciones.html"
         },
         {
             "nombre": "contactenos",
-            "url": "mailto:maruccimatias5@gmail.com?subject=Consulta&body=Hola,%20tengo%20una%20pregunta."
+            "url": "mailto:?subject=Consulta&body=Hola,%20tengo%maruccimatias5@gmail.com20una%20pregunta."
         },
         {
             "nombre": "Politicas de uso",
-            "url": "/Public/assets/js/modulos/footer/JSON_footer/pdf/Manual_Gestion_Torneos_MAPTV.pdf"
+            "url": "/assets/js/modulos/footer/JSON_footer/pdf/Manual_Gestion_Torneos_MAPTV.pdf"
         }
     ]
 }

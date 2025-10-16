@@ -1,5 +1,5 @@
 export async function pie_pagina(){
-    const res = await fetch('/Public/assets/js/modulos/footer/JSON_footer/footer.json'); // Ruta al archivo JSON
+    const res = await fetch('/assets/js/modulos/footer/JSON_footer/footer.json'); // Ruta al archivo JSON
     const links = await res.json(); // Obtener los enlaces del menú desde el archivo JSON, await es para esperar la respuesta de la promesa
 
     const footer = document.querySelector("footer");

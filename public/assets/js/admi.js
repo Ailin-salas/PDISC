@@ -63,3 +63,4 @@ const enviarDatosTorneo = (datos) => {
     });
 };       
  
+//peticiones al backend,  manejo de usuarios y inivtados, manejo de posiciones manejo de torneos, manejo de juegos, manejo de partidas,nomre de usauario de admi, manejo de puntos de la tabla de posiciones

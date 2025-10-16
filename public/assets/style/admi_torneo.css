@@ -4,8 +4,7 @@ body {
     min-height: 100vh; /*Asegura que el cuerpo ocupe al menos la altura completa de la ventana*/
     display: flex; 
     flex-direction: column; /*Permite que el footer se mantenga al final*/
-    background: #4822c3;
-    background: linear-gradient(0deg, rgba(72, 34, 195, 1) 0%, rgba(245, 105, 191, 1) 100%);
+    background: linear-gradient(to right, #9aebee 30%, #559177 70%); 
     color: white;
     font-family: 'Amarante', cursive;
 }
@@ -14,4 +13,9 @@ main {
 }
 .text {
    font-size: 2rem;
+}
+.table1{
+    background: rgba(60, 3, 107, 0.6); /* Fondo semitransparente */
+    color: white; /* Texto blanco para mejor contraste */
+
 }

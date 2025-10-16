@@ -2,13 +2,12 @@
 
 body {
     background-image: url('https://user-images.githubusercontent.com/12555355/157297920-03207019-9140-420a-8d26-17b5b5465c19.png');
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
     background-attachment: fixed;
-    background: #4822c3;
-    background: linear-gradient(0deg, rgba(72, 34, 195, 1) 0%, rgba(245, 105, 191, 1) 100%);
+    background: linear-gradient(to right, #9aebee 30%, #559177 70%); 
     color: white;
-    font-family: 'Amarante', cursive;
+    font-family: 'Amarante';
 }
 h1 {
     font-size: 2.5rem;
