@@ -3,8 +3,9 @@ import jwt from 'jsonwebtoken';
 import { Router } from "express";
 import { z } from "zod"; // Importamos Zod
 import { nanoid } from 'nanoid';
-import prisma from "../lib/prisma.js";
 import EnviarMensaje from '../services/emails.js';
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
 
 const router = Router();
 
