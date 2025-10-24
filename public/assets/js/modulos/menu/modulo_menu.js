@@ -4,20 +4,26 @@ export async function MenuDespegable() {
    link.rel = 'stylesheet';
    link.href = 'https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap'; // URL de Google Fonts 
    document.head.appendChild(link);
+
 try{ 
   const res = await fetch('/assets/js/modulos/menu/JSON_menu/menu.json'); // Ruta al archivo JSON
   const links = await res.json(); // Obtener los enlaces del menú desde el archivo JSON, await es para esperar la respuesta de la promesa
 
   const header = document.querySelector("header");
   header.classList.add("d-flex","justify-content-between","align-items-center");
+  
+  const token = localStorage.getItem("token"); // Obtener el token del almacenamiento local
+    
+
   const div1 = document.createElement("div");
    div1.classList.add("menu-despegable"); // Clase CSS para el menú despegable
    header.append(div1);
-
+  
   const buttonmenu = document.createElement("button");
    buttonmenu.classList.add("button-menu"); // Clase CSS para el botón del menú
    buttonmenu.textContent = "☰"; // Icono de menú 
    div1.append(buttonmenu);
+   
 
   const span = document.createElement("span");
    span.className = "text-center"; //
@@ -54,30 +60,32 @@ try{
      } 
   }
   buttonmenu.addEventListener("click", toggleMenu);
-
-  const verificar = localStorage.getItem("isLoggedIn"); // localStorage.getItem obtiene el valor de una clave en el almacenamiento local
+  
   const btnRegistro = document.createElement("button");
-  if(verificar === "true"){
-    const lupa = document.createElement("button");
-    lupa.textContent = "🔍 buscador"; // Icono de lupa
-    lupa.classList.add("lupa-buscador");
-    lupa.addEventListener("click", () => { 
-      localStorage.setItem("isLoggedIn", "false");
-      window.location.href = "/Public/pages/usuarios/inicios/home.html"; 
-      //redirecciona a la página de login
-    });
-    header.append(lupa);
-  }else{
-     btnRegistro.classList.add("btn-registro");
-     btnRegistro.textContent ="Registro";
-     btnRegistro.href = "/Public/pages/usuarios/inicios/index.html";
-     header.append(btnRegistro);
-  }
+   btnRegistro.classList.add("btn-registro");
+   btnRegistro.textContent ="Registro";
+   header.append(btnRegistro);
+   
+   btnRegistro.onclick = ()=> {
+     const logueado = token !== null;
+     btnRegistro.style.display = logueado ? "none" : "block";
+     document.getElementById("btn-perfil").classList.toggle("d-none", !logueado);
+
+     window.location.href = "/pages/usuarios/sesion/Registro.html"; 
+     //windos.location.href sirve para redireccionar a otra página
+    }
+ 
+ 
+  // const btnRegistro = document.createElement("button");
+  //    btnRegistro.classList.add("btn-registro");
+  //    btnRegistro.textContent ="Registro";
+  //    header.append(btnRegistro);
+
   function Registro(){
-    window.location.href = "/Public/pages/usuarios/sesion/Registro.html"; 
+    window.location.href = "/pages/usuarios/sesion/Registro.html"; 
     //windos.location.href sirve para redireccionar a otra página
   }
-  btnRegistro.addEventListener("click", Registro);
+  btnRegistro.addEventListener("click", Registro());
 
 }catch(error){
   console.error("Error al cargar el menú:", error);
