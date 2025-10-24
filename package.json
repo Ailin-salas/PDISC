@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "Este es el proyecto final MAPTV",
   "type": "module",
-  "main": "Server.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "Server.js",
-    "start": "Server.js",
-    "build": "prisma generate && prisma migrate deploy"
+    "dev": "node index.js",
+    "start": "node index.js",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
