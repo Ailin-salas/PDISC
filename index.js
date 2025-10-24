@@ -21,9 +21,9 @@ app.use(express.static('public'));
 app.use(logger); // Aplica el middleware a todas las rutas
 
 // Ruta para servir la página de inicio
-app.get('/', (req, res) => {
-  res.sendFile('pages/usuarios/inicios/index.html', { root: 'public' });
-});
+//app.get('/', (req, res) => {
+//res.sendFile('pages/usuarios/inicios/index.html', { root: 'public' });
+//});
 
 // Rutas de autenticación
   app.use('/auth', authRoutes);
