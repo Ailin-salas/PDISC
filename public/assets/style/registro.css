@@ -1,62 +1,84 @@
-/* Importa las fuentes de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+/* Importar fuente personalizada, si es necesario */
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap');
 
-body {
-    background-color: #f0f2f5; /* Fondo opcional para toda la página */
+/* Estilos para la interfaz de registro */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-/* Estilos de tus clases */
-.fifa, .fifa-1 {
-	opacity: 0.8;
-    width: 100%; /* Ajuste para que la imagen sea responsiva */
-    height: auto;
+.background-container {
+    background-image: url('../imagenes/gta-5-franklin-with-dog-z2tn2r7zotkcr0oq.jpg');
+    background-size: cover;
+    background-position: center 30%; /* Ajuste para centrar el personaje */
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.map-tv-1 {
-	color: #FFFFFF;
-	font-family: "Amarante", cursive;
-	font-weight: 400;
-	font-size: 30px;
+.registration-form {
+    background: rgba(255, 255, 255, 0.4); /* Fondo blanco con 40% de opacidad */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Ajusta el ancho */
 }
 
-.rectangle-1 {
-    width: 100%; /* El contenedor ahora ocupa el ancho total de la columna de Bootstrap */
-    background: #2F073B;
-    border: 2px solid #000000;
-    border-radius: 8px; /* Un valor más común para tarjetas */
+.registration-form h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.inicio-de-sesion {
-	color: #FFFFFF;
-	font-family: "Helvetica", sans-serif;
-	font-weight: 400;
-	font-size: 26px;
+.form-group {
+    margin-bottom: 15px;
 }
 
-.text-input-3, .text-input-4 {
-	background: #FFFFFF;
-	border: 1px solid #232323;
-	border-radius: 3px;
-	color: #C0C0C0;
-	font-family: "Helvetica", sans-serif;
-	font-weight: 400;
-	font-size: 14px;
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px; /* Bordes más redondeados */
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    color: #333;
 }
 
-.bootstrap-red-button-normal-2 {
-	background: #CBB4D4;
-	border: 1px solid #CBB4D4;
-	border-radius: 6px;
-	color: #FFFFFF;
-	font-family: "Helvetica", sans-serif;
-	font-weight: 400;
-	font-size: 14px;
+.form-group input::placeholder {
+    color: #666;
 }
 
-.link-3, .link-4 {
-	color: #929292;
-	font-family: "Helvetica", sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	text-decoration: underline;
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #ddd;
+}
+
+.login-link {
+    margin-top: 20px;
+    color: #333;
+}
+
+.login-link a {
+    color: #d20e0e; /* Color del enlace */
+    text-decoration: none;
+    font-weight: bold;
 }
