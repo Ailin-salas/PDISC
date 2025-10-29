@@ -1,12 +1,9 @@
-/* css/chatbot.css */
-
-/* Variables para el chatbot */
 :root {
     --chatbot-bg: var(--clr-light-bg-primary);
     --chatbot-text: var(--clr-light-text-dark);
     --chatbot-accent: var(--clr-light-accent);
     --chatbot-header-bg: var(--clr-light-bg-secondary);
-    --user-msg-bg: #dcf8c6; /* Verde claro */
+    --user-msg-bg: #000000; /* Verde claro */
     --bot-msg-bg: var(--clr-light-bg-secondary);
     --shadow-heavy: rgba(0, 0, 0, 0.25);
     --transition-fast: 0.2s ease;
@@ -18,27 +15,26 @@ body.dark-mode {
     --chatbot-text: var(--clr-dark-text-dark);
     --chatbot-accent: var(--clr-dark-accent);
     --chatbot-header-bg: var(--clr-dark-bg-secondary);
-    --user-msg-bg: #3f7f3f; /* Verde oscuro */
+    --user-msg-bg: #583f7f; /* Verde oscuro */
     --bot-msg-bg: var(--clr-dark-bg-secondary);
-    --shadow-heavy: rgba(255, 240, 30, 0.25);
+    --shadow-heavy: rgba(255, 30, 169, 0.25);
 }
 
-/* Estilos del contenedor principal del chatbot */
 .chatbot-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
     font-family: Arial, sans-serif;
+
 }
 
-/* Botón de alternancia (toggle) */
 .chatbot-toggle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: var(--chatbot-accent);
-    color: var(--clr-light-text-dark); /* Color del icono */
+    background-color: rgba(255, 0, 149, 0.452);
+    color: var(--clr-light-text-dark); 
     border: none;
     box-shadow: 0 4px 10px var(--shadow-heavy);
     cursor: pointer;
@@ -54,7 +50,6 @@ body.dark-mode {
     box-shadow: 0 6px 15px var(--shadow-heavy);
 }
 
-/* Ventana del Chatbot */
 .chatbot-window {
     width: 350px;
     max-height: 450px;
@@ -64,9 +59,9 @@ body.dark-mode {
     flex-direction: column;
     overflow: hidden;
     position: absolute;
-    bottom: 80px; /* Separación del botón toggle */
+    bottom: 80px; 
     right: 0;
-    background-color: var(--chatbot-bg);
+    background-color:rgba(116, 0, 116, 0.507);
     border: 1px solid var(--chatbot-accent);
     transition: transform var(--transition-fast), opacity var(--transition-fast), visibility var(--transition-fast);
 }
@@ -83,7 +78,6 @@ body.dark-mode {
     visibility: visible;
 }
 
-/* Encabezado del Chatbot */
 .chatbot-header {
     display: flex;
     justify-content: space-between;
@@ -112,7 +106,6 @@ body.dark-mode {
     color: var(--chatbot-accent);
 }
 
-/* Área de Mensajes */
 .chatbot-messages {
     flex-grow: 1;
     padding: 15px;
@@ -121,7 +114,6 @@ body.dark-mode {
     border-bottom: 1px solid var(--chatbot-header-bg);
 }
 
-/* Estilos de mensajes */
 .message {
     margin-bottom: 10px;
     max-width: 80%;
@@ -134,7 +126,7 @@ body.dark-mode {
 
 .user-message {
     background-color: var(--user-msg-bg);
-    color: var(--clr-light-text-dark); /* Color oscuro para el texto del usuario */
+    color: var(--clr-light-text-dark); 
     margin-left: auto;
     border-bottom-right-radius: 3px;
 }
@@ -176,7 +168,7 @@ body.dark-mode .user-message {
 
 #chatbot-send {
     background-color: var(--chatbot-accent);
-    color: var(--clr-light-text-dark); /* Color oscuro para el icono de enviar */
+    color: var(--clr-light-text-dark); 
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -190,5 +182,5 @@ body.dark-mode .user-message {
 }
 
 #chatbot-send:hover {
-    background-color: #a19700; /* Un tono más oscuro del accent */
+    background-color: #3b0036;
 }

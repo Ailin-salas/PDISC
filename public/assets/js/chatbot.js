@@ -53,22 +53,22 @@ document.addEventListener('DOMContentLoaded', () => {
         // 0. MANEJO DE INSULTOS Y LENGUAJE INAPROPIADO (NUEVO)
         { 
             keywords: ['salame', 'retardado', 'retardado', 'nigga', 'conchuda', 'conchudo', 'sexo', 'pitito', 'conchita', 'chota', 'choto', 'chotin', 'cogida', 'cogido', 'salamin', 'boludito', 'boludita', 'trolo', 'trola', 'gay', 'gey', 'lesbiana', 'homosexual', 'travesti', 'traba', 'esclavo', 'esclava', 'gordo', 'gorda', 'teton', 'tetona', 'lechon', 'vaca', 'trava', 'cojo', 'cojer', 'coger', 'garcho', 'garchar', 'violo', 'violador', 'violadora', 'violado', 'vialada', 'gordita', 'gordito', 'pelotudito', 'pelotudita', 'panflina', 'trolin', 'trolito', 'trolita', 'nabo', 'pelado', 'calvo', 'pelon', 'culon', 'negro', 'negra', 'culona', 'cancer', 'putito', 'putita', 'boludin', 'hermana', 'madre', 'vieja', 'mama', 'tia', 'lora', 'mono', 'naboleti', 'salamina', 'tontin', 'pete', 'inutil', 'panflin', 'pancho', 'gil', 'gila', 'pancha', 'orto', 'semen', 'leche', 'lechita', 'bolas', 'testiculos', 'mogolico', 'mogolica', 'down', 'autista', 'retrasado', 'retrasada', 'tarado', 'tarada', 'tonto', 'tonta', 'teta', 'culo', 'nalgas', 'pito', 'pene', 'vagina', 'concha', 'infeliz', 'estupido', 'estupida', 'idiota', 'mierda', 'puto', 'puta', 'imbecil', 'cabron', 'cabrona', 'joder', 'boludo', 'boluda', 'coño', 'gilipollas', 'pendejo', 'pendeja', 'chinga', 'groseria', 'obscena', 'maldito', 'maldita', 'feo', 'caca', 'pedo', 'pis'], 
-            response: 'Agradeceria que mantengas un lenguaje profesional. Estoy aquí para ayudarte con preguntas sobre Portafy, no para responder a ofensas. Por favor, reformula tu pregunta de manera respetuosa.' 
+            response: 'Agradeceria que mantengas un lenguaje profesional. Estoy aquí para ayudarte con preguntas sobre MAPTV, no para responder a ofensas. Por favor, reformula tu pregunta de manera respetuosa.' 
         },
 
         // 1. Saludos y Cierres
         { 
             keywords: ['hola', 'buenas', 'buen', 'buenas', 'hi', 'hello', 'helow', 'hey', 'holis', 'ola', 'oli', 'olis', 'holanda', 'olanda', 'saludo', 'buenos dias', 'onda', 'que tal'], 
-            response: '¡Hola! Soy tu **Asistente Portafy**. ¿En qué puedo ayudarte hoy?' 
+            response: '¡Hola! Soy tu **Asistente MAPTV**. ¿En qué puedo ayudarte hoy?' 
         },
         { 
             keywords: ['gracias', 'muy bien', 'adios', 'chao', 'hasta luego'], 
-            response: '¡De nada! Me alegra haberte ayudado. ¡Que tengas un gran día creando/gestionando tu **portafolio**!' 
+            response: '¡De nada! Me alegra haberte ayudado. ¡Que tengas un gran día creando/gestionando tu **TORNEO**!' 
         },
         // 2. Core: Creación de Portafolio
         { 
             keywords: ['portafolio', 'crear', 'hacer uno', 'mi portafolio', 'empezar'], 
-            response: 'Para **crear tu portafolio**, ve a la página principal y busca el botón de creación, o sino tambien en cualquier otra pagina le das al boton con la personita en la barra de navegacion o "iniciar sesion" en el menu lateral. Es un proceso muy simple.' 
+            response: 'Para **crear tu torneo**, ve a la página principal y busca el botón de creación, o sino tambien en cualquier otra pagina le das al boton con la personita en la barra de navegacion o "iniciar sesion" en el menu lateral. Es un proceso muy simple.' 
         },
         // 3. Páginas de Navegación
         { 
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         { 
             keywords: ['descubrir', 'proyectos', 'ver otros', 'explorar', 'inspiracion'], 
-            response: 'Para explorar portafolios de otros usuarios e inspirarte, visita la página **Descubre Portafolios** (`index.html`).' 
+            response: 'Para explorar torneos de otros usuarios e inspirarte, visita la página **Destacados** (`index.html`).' 
         },
         { 
             keywords: ['main.html', 'inicio', 'casa', 'dashboard'], 
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 4. Tema y Diseño
         { 
             keywords: ['tema', 'color', 'oscuro', 'claro', 'modo', 'neón', 'luna', 'sol'], 
-            response: 'Portafy soporta **Modo Claro** y **Modo Oscuro** (Temática Neón). Usa el interruptor de luna/sol en el encabezado para cambiar el tema.' 
+            response: 'MAPTV soporta **Modo Claro** y **Modo Oscuro** (Temática Neón). Usa el interruptor de luna/sol en el encabezado para cambiar el tema.' 
         },
         { 
             keywords: ['diseño', 'estilo', 'aspecto', 'se ve'], 
@@ -141,15 +141,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // 7. Información Corporativa / Legal
         { 
             keywords: ['que es portafy', 'nombre', 'significado', 'plataforma', 'empresa'], 
-            response: '**Portafy** es una plataforma para crear y gestionar tu portafolio profesional de forma simple, enfocada en un diseño estético y moderno.' 
+            response: '**MAPTV** es una plataforma para crear y gestionar tu portafolio profesional de forma simple, enfocada en un diseño estético y moderno.' 
         },
         { 
             keywords: ['mision', 'objetivo', 'proposito'], 
-            response: 'Nuestro objetivo es simplificar la creación de portafolios, ofreciendo herramientas sencillas y un diseño estético y moderno de temática Neón.' 
+            response: 'Nuestro objetivo es simplificar la creación de torneos, ofreciendo herramientas sencillas y un diseño estético y moderno de temática Neón.' 
         },
         { 
             keywords: ['version', 'año', 'copyright', 'derechos'], 
-            response: 'El copyright actual de Portafy es **© 2025**. Todos los derechos están reservados según lo indicado en el pie de página.' 
+            response: 'El copyright actual de MAPTV es **© 2025**. Todos los derechos están reservados según lo indicado en el pie de página.' 
         },
         { 
             keywords: ['cookies', 'privacidad', 'legal', 'terminos'], 
@@ -170,12 +170,12 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         { 
             keywords: ['icono', 'logo', 'imagen', 'multimedia'], 
-            response: 'El logo de Portafy está en `multimedia/logo.png`. Los iconos utilizados son de la librería **Font Awesome 6**.' 
+            response: 'El logo de MAPTV está en `multimedia/logo.png`. Los iconos utilizados son de la librería **Font Awesome 6**.' 
         },
         // 9. Misc
         { 
             keywords: ['es gratis', 'costo', 'pago', 'cuanto cuesta'], 
-            response: 'Asumo que la plataforma es de acceso libre para la creación de portafolios básicos. Revisa la documentación para detalles sobre licencias o planes de pago.' 
+            response: 'Asumo que la plataforma es de acceso libre para la creación de TORNEOS básicos. Revisa la documentación para detalles sobre licencias o planes de pago.' 
         },
         { 
             keywords: ['usuario', 'login', 'registro', 'sesion'], 
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         { 
             keywords: ['como contribuir', 'colaborar', 'trabajar'], 
-            response: 'Por el momento, Portafy es un proyecto cerrado. No tenemos un sistema de contribución o colaboración de código abierto.' 
+            response: 'Por el momento, MAPTV es un proyecto cerrado. No tenemos un sistema de contribución o colaboración de código abierto.' 
         },
         { 
             keywords: ['error', 'bug', 'falla'], 
