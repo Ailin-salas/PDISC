@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="../../../assets/css/login.css">
+    <link rel="stylesheet" href="../../../assets/style/login.css">
 </head>
 <body>
     <div class="login-container">
@@ -18,7 +18,7 @@
             </div>
             <button type="submit" class="login-btn">Acceder</button>
             <div class="register-link">
-                <a href="../inicio/registro.html">Registrarse</a>
+                <a href="../sesion/registro.html">Registrarse</a>
             </div>
         </form>
     </div>
@@ -47,7 +47,7 @@
                 if (response.ok) {
                     alert('Inicio de sesión exitoso!');
                     // los dirije a la página principal si el login fue exitoso
-                    window.location.href = '../../usuario/inicio/home.html'; 
+                    window.location.href = '../inicios/home.html'; 
                 } else {
                     alert('Error al iniciar sesión: ' + result.error);
                 }
