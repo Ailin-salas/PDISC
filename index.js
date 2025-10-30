@@ -25,6 +25,10 @@ app.use(logger); // Aplica el middleware a todas las rutas
 //res.sendFile('pages/usuarios/inicios/index.html', { root: 'public' });
 //});
 
+app.get('/', (req, res) => {
+  res.sendFile('index.html', { root: 'public' });
+});
+
 // Rutas de autenticación
   app.use('/auth', authRoutes);
 
@@ -35,7 +39,7 @@ app.use(logger); // Aplica el middleware a todas las rutas
 //  app.use('/test', testRoutes); // Ruta de prueba
 
 // Manejo de errores 404
-// app.use(notFound); 
+app.use(notFound); 
 
 // Exportar la app para Vercel (sin app.listen)
 export default app;
