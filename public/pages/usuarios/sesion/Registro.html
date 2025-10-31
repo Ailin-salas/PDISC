@@ -27,7 +27,7 @@
                 <button type="submit" class="register-btn">Registrarse <i class="fa-solid fa-bolt"></i></button>
             </form>
             <div class="login-link">
-                <p>¿Ya tienes una cuenta? <a href="../../usuario/inicio/login.html">Inicia Sesión <i class="fa-solid fa-arrow-right-to-bracket"></i></a></p><br>
+                <p>¿Ya tienes una cuenta? <a href="../../usuario/sesion/login.html">Inicia Sesión <i class="fa-solid fa-arrow-right-to-bracket"></i></a></p><br>
                 <button id="guest-login-btn">Acceder como Invitado</button>
             </div>
         </div>
@@ -66,7 +66,7 @@
 
             if (response.ok) {
                 alert('¡Registro exitoso! Ya puedes iniciar sesión.');
-                window.location.href = '../../usuario/inicio/login.html'; 
+                window.location.href = '../../usuario/sesion/login.html'; 
             } else {
                 alert('Error en el registro: ' + result.error);
             }

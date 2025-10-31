@@ -23,7 +23,6 @@ body, html {
 
 .registration-form {
     background: rgba(255, 255, 255, 0.4); /* Fondo blanco con 40% de opacidad */
-    backdrop-filter: blur(5px); /* Efecto de desenfoque */
     padding: 30px 40px;
     border-radius: 20px;
     text-align: center;

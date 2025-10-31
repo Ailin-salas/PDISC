@@ -78,7 +78,7 @@ export async function MenuDespegable() {
       btnRegistro.classList.add("btn-registro");
       btnRegistro.textContent = "Registro";
       btnRegistro.onclick = () => {
-        window.location.href = "/pages/usuarios/sesion/Registro.html";
+        window.location.href = "/pages/usuarios/sesion/registro.html";
       };
       header.append(btnRegistro);
     } else {
