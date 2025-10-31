@@ -14,23 +14,20 @@ const app = express();
 app.use(express.json()); // para leer JSON
 app.use(cors()); 
 
-// Servir archivos estáticos desde la carpeta 'public'
-app.use(express.static('public'));  
-
 // Middleware de logging
 app.use(logger); // Aplica el middleware a todas las rutas
 
 // Ruta para servir la página de inicio
-//app.get('/', (req, res) => {
-//res.sendFile('pages/usuarios/inicios/index.html', { root: 'public' });
-//});
+app.get('/ping', (req, res) => {
+  res.send('Pong 🏓');
+});
 
 // app.get('/', (req, res) => {
-//   res.sendFile('./public/index.html'); 
+//   res.sendFile('./public/index.html', { root: '.' }); 
 // });
 
 // Rutas de autenticación
-  app.use('/auth', authRoutes);
+app.use('/auth', authRoutes);
 
 // Rutas de la API
  app.use('/partidas', partidaRoutes);
