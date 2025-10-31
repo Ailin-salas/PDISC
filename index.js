@@ -26,7 +26,7 @@ app.use(logger); // Aplica el middleware a todas las rutas
 //});
 
 app.get('/', (req, res) => {
-  res.sendFile('./public/index.html');
+  res.sendFile('./public/index.html'); 
 });
 
 // Rutas de autenticación
