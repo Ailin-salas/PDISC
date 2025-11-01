@@ -18,7 +18,7 @@ app.use(cors());
 app.use(logger); // Aplica el middleware a todas las rutas
 
 // Ruta para servir la página de inicio
-app.get('/ping', (req, res) => {
+app.get('/api/ping', (req, res) => {
   res.send('Pong 🏓');
 });
 
