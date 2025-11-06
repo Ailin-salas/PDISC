@@ -11,43 +11,91 @@
 <body>
   <header class="header"></header>
 
-  <main class="container mt-4">
-    <div> 
+ <main class="container mt-4">
+   <div> 
       <h2 class="text text-center">¡CREA TU TORNEO!</h2>
-      <div class="position-relative">
-        <img src="../../../assets/img/a-board-game-galore-evening-u8vu6t347rc9gfcd.webp" alt="imagen" class="imagen rounded mx-auto d-block p-2 m-2" >
-        <div class="d-flex justify-content-center align-items-center text-center"> 
+       <div class="position-relative">
+         <img src="../../../assets/img/a-board-game-galore-evening-u8vu6t347rc9gfcd.webp" alt="imagen" class="imagen rounded mx-auto d-block p-2 m-2" >
+         <div class="d-flex justify-content-center align-items-center text-center"> 
           <a href="../../../pages/torneo/vista_formulario/torneo.html" class="btn btn-primary position-absolute top-50 start-50 translate-middle">CREAR</a>
         </div>
       </div>  
     </div>  
     
     <hr class="my-5">  
-
-    <h2 class="text text-center">TUS TORNEOS</h2>
-     <div class="rectangle-5 p-3 mx-auto">
-        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-          <div class="col">
-            <div class="rect-noticas p-3 text-center">
-              <img src="../../../../assets/img/aa.jpeg" alt="Noticia 1" class="img img-fluid">
-              <p class="texto_noticias mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button class="bot-n btn-primary">Leer más</button>
+    <section class="secondary-content container mt-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <img src="../../../assets/img/efootball2024.jpg" alt="Cartas" class="img-fluid rounded-3">
+        </div>
+        <div class="col-md-6">
+          <div class="active-tournaments p-4 rounded-3">
+                      <h2 class="section-title mb-4">TORNEOS ACTIVOS</h2>
+                      <ul class="list-unstyled">
+                      <li class="tournament-item d-flex justify-content-between align-items-center mb-3 p-2 rounded-3">
+                      <span>Nombre del Torneo</span>
+                                <button class="btn btn-info-tournament">⚡</button>
+                            </li>
+                            <li class="tournament-item d-flex justify-content-between align-items-center mb-3 p-2 rounded-3">
+                                <span>Nombre del Torneo</span>
+                                <button class="btn btn-info-tournament">⚡</button>
+                            </li>
+                            <li class="tournament-item d-flex justify-content-between align-items-center p-2 rounded-3">
+                                <span>Nombre del Torneo</span>
+                                <button class="btn btn-info-tournament">⚡</button>
+                            </li>
+                        </ul>
             </div>
-          </div>
-          <div class="col">
-             <div class="rect-noticas p-3 text-center">
-                <img src="../../../../assets/img/aa.jpeg" alt="Noticia 2" class="img img-fluid">
-                <p class="texto_noticias mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button class="bot-n btn-primary ">Leer más</button>
-             </div>
-           </div>
-         </div>
+        </div>
       </div>
+    </section>
       
     <hr class="my-5">
 
     <h2 class="text text-center">RANKING JUGADORES</h2>
-  
+    <section class="secondary-content container mt-5">
+        <div class="row g-4"> 
+            
+            <div class="col-md-6">
+                <div class="active-tournaments p-4 rounded-3 h-100">
+                    <h2 class="section-title mb-4">RANKING DE JUGADORES</h2>
+                    <ul class="list-unstyled">
+                        <li class="tournament-item d-flex justify-content-between align-items-center mb-3 p-2 rounded-3">
+                            <span>NightReaper</span>
+                            <button class="btn btn-info-tournament">⚡</button>
+                        </li>
+                        <li class="tournament-item d-flex justify-content-between align-items-center mb-3 p-2 rounded-3">
+                            <span>BONDIOLITA_GAMER01</span>
+                            <button class="btn btn-info-tournament">⚡</button>
+                        </li>
+                        <li class="tournament-item d-flex justify-content-between align-items-center p-2 rounded-3">
+                            <span>SeñorTiroLoco</span>
+                            <button class="btn btn-info-tournament">⚡</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="active-tournaments p-4 rounded-3 h-100">
+                    <h2 class="section-title mb-4">RANKING DE JUGADORES</h2>
+                    <ul class="list-unstyled">
+                        <li class="tournament-item d-flex justify-content-between align-items-center mb-3 p-2 rounded-3">
+                            <span>Battlefield Elite</span>
+                            <button class="btn btn-info-tournament">⚡</button>
+                        </li>
+                        <li class="tournament-item d-flex justify-content-between align-items-center mb-3 p-2 rounded-3">
+                            <span>Operation Victory</span>
+                            <button class="btn btn-info-tournament">⚡</button>
+                        </li>
+                        <li class="tournament-item d-flex justify-content-between align-items-center p-2 rounded-3">
+                            <span>Kombat Legends</span>
+                            <button class="btn btn-info-tournament">⚡</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
   </main>
   
   <hr class="my-5">  

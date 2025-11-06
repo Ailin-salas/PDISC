@@ -27,11 +27,15 @@ export async function MenuDespegable() {
     div1.append(buttonmenu);
 
     // Logo MAPTV
+    const a= document.createElement("a");
+    a.href="../../../../index.html";
+
     const span = document.createElement("span");
-    span.className = "logo text-center";
+    span.classList.add ("logo");
     span.textContent = "MAPTV";
-   
-    header.append(span);
+
+    a.append(span);
+    header.append(a);
       
     const div2=document.createElement("div");
     div2.classList.add("d-none","d-sm-block");

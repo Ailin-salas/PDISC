@@ -13,43 +13,50 @@
     <header class="header"></header>
     
     <main>
-        <h1 class="text-center">¡ADMINISTRA TU TORNEO!</h1>
-        <!-- Tabla de datos del torneo editable -->
-        <div class="container mt-4" id="torneo-info">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
+    <h1 class="text-center text-title">¡ADMINISTRA TU TORNEO!</h1>
+
+    <!-- Tabla de datos del torneo editable -->
+        <div class="container mt-4 bg-salmon p-4 rounded" id="torneo-info">
+           <div class="row justify-content-center">
+               <div class="col-12 col-md-8">
                     <table class="table1">
-                        <tbody class="table1">
-                            <tr>
-                                <th>Nombre</th>
-                                <td><input type="text" class="form-control" value="Nombre Del torneo" id="nombreTorneo"></td>
-                            </tr>
-                            <tr>
-                                <th>Descripción</th>
-                                <td><input type="text" class="form-control" value="Descripción del torneo" id="descripcionTorneo"></td>
-                            </tr>
-                            <tr>
-                                <th>Fecha de inicio</th>
-                                <td><input type="date" class="form-control" id="fechaInicioTorneo" value="2025-09-24"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="d-flex justify-content-between">
-                        <button class="btn1 btn-primary" id="guardarTorneo">Guardar Cambios</button>
-                        <button class="btn2 btn-success" id="comenzarTorneo">Comenzar Torneo</button>
-                    </div>
-                </div>
-            </div>
+                       <tbody class="table1">
+                          <tr>
+                             <th>Nombre</th>
+                             <td><input type="text" class="form-control" value="Nombre Del torneo" id="nombreTorneo"></td>
+                         </tr>
+                         <tr>
+                             <th>Descripción</th>
+                             <td><input type="text" class="form-control" value="Descripción del torneo" id="descripcionTorneo"></td>
+                         </tr>
+                         <tr>
+                             <th>Fecha de inicio</th>
+                             <td><input type="date" class="form-control" id="fechaInicioTorneo" value="2025-09-24"></td>
+                        </tr>
+                     </tbody>
+                 </table>
+                 <div class="d-flex justify-content-between mt-3">
+                     <button class="btn1 btn-primary" id="guardarTorneo">Guardar Cambios</button>
+                     <button class="btn btn-success" id="comenzarTorneo">Comenzar Torneo</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+
+       <!-- URL de ingreso al torneo -->
+        <div class="container mt-4 text-center url-box">
+         <p class="text-muted">Compartí esta URL para que los participantes ingresen al torneo:</p>
+          <a id="urlTorneo" href="#" class="url text-decoration-none text-info fw-bold">https://miapp.com/torneo/Nombre-Del-torneo</a>
         </div>
 
         <!-- Tabla de administración de participantes (oculta al inicio) -->
-        <div class="container mt-4" id="admin-participantes" style="display:none;">
+        <div class="container mt-4" id="admin-participantes" style="display: none;">
             <div class="row justify-content-end align-items-center">
                 <span class="text col-12 col-md-4 d-flex justify-content-center align-items-center" id="nombreTorneoSpan">Nombre Del torneo</span>
                 <div class="col-12 col-md-8">
                     <div class="table-responsive text-start">
-                        <table class="table table-striped table-dark">
-                            <thead>
+                        <table class="table1">
+                            <thead class="table1">
                                 <tr>
                                     <th scope="col">Posicion</th>
                                     <th scope="col">Team</th>
@@ -63,7 +70,7 @@
                                     <td>Equipo A</td>
                                     <td>30</td>
                                     <td>
-                                        <button class="btn btn-success btn-sm me-1">Ganar</button>
+                                        <button class="btn1 btn-success btn-sm me-1">Ganar</button>
                                         <button class="btn btn-secondary btn-sm">Perder</button>
                                     </td>
                                 </tr>
@@ -72,7 +79,7 @@
                                     <td>Equipo B</td>
                                     <td>25</td>
                                     <td>
-                                        <button class="btn btn-success btn-sm me-1">Ganar</button>
+                                        <button class="btn1 btn-success btn-sm me-1">Ganar</button>
                                         <button class="btn btn-secondary btn-sm">Perder</button>
                                     </td>
                                 </tr>
@@ -81,8 +88,8 @@
                                     <td>Equipo C</td>
                                     <td>20</td>
                                     <td>
-                                        <button class="btn3 btn-success btn-sm me-1">Ganar</button>
-                                        <button class="btn4 btn-secondary btn-sm">Perder</button>
+                                        <button class="btn1 btn-success btn-sm me-1">Ganar</button>
+                                        <button class="btn btn-secondary btn-sm">Perder</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -95,8 +102,7 @@
 
     <hr class="my-5">
      
-    <footer class="footer"></footer>
-    
+    <footer class="footer"></footer>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="../../../assets/js/modulos/menu/main_menu.js"></script>
     <script type="module" src="../../../assets/js/modulos/footer/main_footer.js"></script>

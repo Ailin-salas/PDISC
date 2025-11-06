@@ -27,12 +27,12 @@ app.get('/api/ping', (req, res) => {
 // });
 
 // Rutas de autenticación
-app.use('/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 
 // Rutas de la API
- app.use('/partidas', partidaRoutes);
- app.use('/torneo', torneoRoutes);
- app.use('/usuario', usuarioRoutes);
+ app.use('/api/partidas', partidaRoutes);
+ app.use('/api/torneo', torneoRoutes);
+ app.use('/api/usuario', usuarioRoutes);
 //  app.use('/test', testRoutes); // Ruta de prueba
 
 // Manejo de errores 404

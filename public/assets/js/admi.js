@@ -41,6 +41,20 @@
     });
 });
 
+const nombreInput = document.getElementById("nombreTorneo");
+const urlTorneo = document.getElementById("urlTorneo");
+
+ function actualizarURL() {
+     const nombre = nombreInput.value.trim();
+     const nombreSlug = nombre.replace(/\s+/g, "-").toLowerCase();
+     const url = `https://miapp.com/torneo/${nombreSlug}`;
+     urlTorneo.href = url;
+     urlTorneo.textContent = url;
+    }
+ nombreInput.addEventListener("input", actualizarURL);
+ // Inicializar al cargar
+ actualizarURL();
+
 // Función flecha para enviar datos JSON por POST
 const enviarDatosTorneo = (datos) => {
     fetch('/api/torneo', {

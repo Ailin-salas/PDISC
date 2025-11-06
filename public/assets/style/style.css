@@ -1,6 +1,6 @@
 /* Importar fuente personalizada, si es necesario */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
 /* --- Definición de Colores Pasteles --- */
 /*
   #FDBCB4: Rosa Salmón (Para fondos/botones secundarios)
@@ -106,10 +106,9 @@ body {
     color: #fff;
     border-radius: 2rem;
     transition: all 0.3s ease;
-}
-
-.btn-read-more:hover {
-    background-color: #3AA8C1; /* Azul Cielo en hover */
-    border-color: #3AA8C1;
-    color: #fff;
+    &:hover {
+     background-color: #3AA8C1; /* Azul Cielo en hover */
+     border-color: #3AA8C1;
+     color: #fff;
+    }
 }

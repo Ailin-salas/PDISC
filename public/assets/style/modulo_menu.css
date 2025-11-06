@@ -25,13 +25,21 @@
  cursor: pointer;
 }
 
-.logo{
-  font-Family : "amarante";
-  color: #7B68EE; /* Violeta Medio para el texto principal */
-  font-size: 1.5rem;
-  font-weight: bold;
+a{
+  text-decoration: none;
+ .logo{
+   font-Family : "amarante";
+   color: #7B68EE; /* Violeta Medio para el texto principal */
+   font-size: 1.5rem;
+   font-weight: bold;
+   &:hover{
+     color: #3AA8C1; /* Azul Cielo para el icono */
+    } 
+  }
 }
+
 .btn-registro{
+  font-family: "amarante";
   background-color: #FDBCB4; /* Rosa Salmón */
   border: 1px solid #7B68EE; /* Borde Violeta */
   color: #333; /* Texto oscuro */
