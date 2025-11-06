@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
 
 footer {
-    background: #000000;
-    color: white;
+    background: #FFFFFF;
+    border-top: 2px solid #3AA8C1;
     font-family: 'Amarante';
     opacity: 90%;
 }
 footer a {
-    color: #ffffff;
+    color: #777;;
     display: inline;   /* los muestra en línea */
     margin-right: 15px; /* separación entre ellos */
     text-decoration: none;
 
     &:hover{
-        color: rgb(0, 238, 255);
+        color: #3AA8C1;
         text-shadow: /*shadow es para añadir efectos de sombra al texto*/
         0 0 5px #fff,
         0 0 20px #00f,
@@ -22,6 +22,23 @@ footer a {
 }
 .logo{
   font-family: "amarante";
-  color: #fff;
+  color: #777;
   font-size: 20px;
 }
+
+/* .footer {
+    background-color: #FFFFFF;
+    border-top: 2px solid #3AA8C1;
+}
+
+.footer .nav-link {
+    color: #777;
+}
+
+.footer .nav-link:hover {
+    color: #3AA8C1;
+}
+
+.copyright {
+    color: #777;
+}  */

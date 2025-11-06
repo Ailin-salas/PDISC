@@ -11,7 +11,7 @@ body, html {
 }
 
 .background-container {
-    background-image: url('../imagenes/gta-5-franklin-with-dog-z2tn2r7zotkcr0oq.jpg');
+    background-image: url('../img/fondo2.jpg');
     background-size: cover;
     background-position: center 30%; /* Ajuste para centrar el personaje */
     background-repeat: no-repeat;

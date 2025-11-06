@@ -6,11 +6,11 @@
         },
         {
         "nombre": "TORNEO ",
-        "enlace": "/pages/torneo/vista_torneo/index.html"
+        "enlace": "/pages/torneo/vista_torneo/toreno.html"
         },
         {
         "nombre": "NOTICIAS",
-        "enlace": "/pages/usuarios/noticias/servicio.html"
+        "enlace": "/pages/usuarios/noticias/noticas.html"
         },
          {
         "nombre": "PERFIL",

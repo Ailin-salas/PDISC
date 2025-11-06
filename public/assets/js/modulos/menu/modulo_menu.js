@@ -17,7 +17,7 @@ export async function MenuDespegable() {
 
     // Contenedor del botón de menú
     const div1 = document.createElement("div");
-    div1.classList.add("menu-despegable");
+    div1.classList.add("menu-despegable", "d-block","d-sm-none" );
     header.append(div1);
 
     // Botón de menú
@@ -28,15 +28,33 @@ export async function MenuDespegable() {
 
     // Logo MAPTV
     const span = document.createElement("span");
-    span.className = "text-center";
+    span.className = "logo text-center";
     span.textContent = "MAPTV";
-    span.style.fontFamily = "amarante";
-    span.style.fontWeight = 400;
-    span.style.fontSize = "24px";
-    span.style.color = "#ffff";
+   
     header.append(span);
+      
+    const div2=document.createElement("div");
+    div2.classList.add("d-none","d-sm-block");
+    header.append(div2);
 
-    // Menú desplegable
+    const nav1 = document.createElement("nav");
+    nav1.classList.add("menu-ul","d-flex","gap-3","align-items-center","justify-content-center");
+
+
+    for (let i = 0; i < links.menu.length; i++) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+
+      a.textContent = links.menu[i].nombre;
+      a.href = links.menu[i].enlace;
+      a.classList.add("menu-item");
+      li.classList.add("li-menu");
+      li.append(a);
+      nav1.append(li);
+    }
+    div2.append(nav1);
+   
+   // Menú desplegable
     const nav = document.createElement("nav");
     nav.classList.add("menu-ul");
     nav.style.display = "none";
@@ -54,7 +72,7 @@ export async function MenuDespegable() {
     }
 
     buttonmenu.append(nav);
-
+       
     // Función para abrir/cerrar menú
     function toggleMenu() {
       buttonmenu.classList.toggle("open");
