@@ -27,7 +27,7 @@
                 <button type="submit" class="register-btn">Registrarse <i class="fa-solid fa-bolt"></i></button>
             </form>
             <div class="login-link">
-                <p>¿Ya tienes una cuenta? <a href="../../usuario/sesion/login.html">Inicia Sesión <i class="fa-solid fa-arrow-right-to-bracket"></i></a></p><br>
+                <p>¿Ya tienes una cuenta? <a href="./login.html">Inicia Sesión <i class="fa-solid fa-arrow-right-to-bracket"></i></a></p><br>
                 <button id="guest-login-btn">Acceder como Invitado</button>
             </div>
         </div>
@@ -54,7 +54,7 @@
         }
 
         try {
-            const response = await fetch('/api/auth/register', {
+            const response = await fetch('/api/usuario', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -79,7 +79,7 @@
     // Lógica para el botón de acceso de invitado (separada del formulario)
     document.getElementById('guest-login-btn').addEventListener('click', async () => {
         try {
-            const response = await fetch('/api/auth/guest-login', {
+            const response = await fetch('/api/usuario/guest-login', {
                 method: 'POST',
             });
 

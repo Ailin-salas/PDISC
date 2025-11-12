@@ -46,7 +46,7 @@ router.post('/guest-login', async (req, res) => {
         const token = jwt.sign(
             {id_usuario: guestUser.id_usuario, isGuest: true},
             process.env.JWT_SECRET,
-            { expiresIn: '1h' }
+            { expiresIn: '5h' }
         );
 
         return res.status(201).json({
@@ -135,7 +135,7 @@ router.post('/login', async (req, res) => {
 
         // Genera un Token JWT
         const token = jwt.sign({ userId: user.id_usuario, email: user.email },
-            process.env.JWT_SECRET, { expiresIn: '1h' });
+            process.env.JWT_SECRET, { expiresIn: '5h' });
 
         return res.status(200).json({ message: 'login exitoso', token });
         
@@ -152,6 +152,36 @@ router.post('/login', async (req, res) => {
         }
         console.error('Error en /login:', error);
         return res.status(500).json({ error: 'Error interno del servidor.' });
+    }
+});
+
+//Get /auth/me - datos del usuario autenticado
+router.get('/me', async (req, res) => {
+    try {
+        const authHeader = req.headers.authorization;
+        const token = authHeader && authHeader.split(' ')[1];
+
+        if (!token) {
+            return res.status(401).json({ error: 'Acceso no autorizado' });
+        }
+
+        //Verifica el token
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+        //busca usuario en la bd
+        const usuario = await prisma.usuario.findUnique({
+            where: {id_usuario: decoded.userId},
+            select: {id_usuario: true, nombre: true, email: true}
+        });
+
+        if(!usuario){
+            return res.status(404).json({error: 'usuario no encontrado'});
+        }
+
+        res.json({usuario});
+    } catch (error) {
+        console.error('Error en /me:', error);
+        return res.status(500).json({ error: 'token invalido o expirado.' });
     }
 });
 

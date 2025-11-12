@@ -31,25 +31,27 @@ router.get('/:id', asyncHandler(async (req, res) => {
 }));
 
 // POST /torneo
-router.post('/',verifyToken, asyncHandler(async (req, res) => { //Solo los usuarios autenticados pueden crear torneos 
-  const { nombre, fecha_inicio, reglas, premios, tipo_torneo, creadorId } = req.body;
-  if (!nombre || !fecha_inicio || !creadorId) {
-    return res.status(400).json({ error: 'Faltan campos obligatorios: nombre, fecha_inicio, y creadorId.' });
+router.post('/', asyncHandler(async (req, res) => {
+  try {
+    console.log("Datos recibidos:", req.body);
+    const { nombre, fecha_inicio, reglas, premios, tipo_torneo, creadorId } = req.body;
+    const nuevoTorneo = await prisma.torneo.create({
+      data: {
+        nombre,
+        fecha_inicio: new Date(fecha_inicio),
+        reglas,
+        premios,
+        tipo_torneo,
+        creador: { connect: { id_usuario: creadorId } }
+      }
+    });
+    res.status(201).json(nuevoTorneo);
+  } catch (error) {
+    console.error("Error al crear torneo:", error);
+    res.status(500).json({ error: "No se pudo crear el torneo" });
   }
-  const nuevoTorneo = await prisma.torneo.create({
-    data: {
-      nombre,
-      fecha_inicio: new Date(fecha_inicio),
-      reglas,
-      premios,
-      tipo_torneo,
-      creador:{
-        connect: { id_usuario: creadorId } // Conecta el torneo al usuario por su ID
-      },
-    },
-  });
-  res.status(201).json(nuevoTorneo);
 }));
+
 
 // PUT /torneo/:id
 router.put('/:id', verifyToken, asyncHandler(async (req, res) => { //Solo los usuarios autenticados pueden actualizar torneos
