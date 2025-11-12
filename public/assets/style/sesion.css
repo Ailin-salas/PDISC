@@ -31,22 +31,23 @@
   font-weight: bold;
   border-radius: 6px;
   transition: all 0.3s ease;
-}
-
-.btn:hover {
-  color: #acffe3 ;
-  background: #35bb83;
+  
+  &:hover {
+   color: #acffe3 ;
+   background: #35bb83;
+  }
 }
 
 a {
   color: #aaa;
   font-size: 14px;
   text-decoration: underline;
+  
+  &:hover {
+  color: rgb(25, 185, 97);
+  }
 }
 
-a:hover {
-  color: rgb(25, 185, 97);
-}
 
 .mobile-view {
   height: 100vh;

@@ -1,0 +1,118 @@
+/* Importa las variables definidas en variables.scss */
+@use 'variables.scss' as vars;
+
+/*importa las fuente de google*/
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap');
+
+.header { 
+ background-color: vars.$color-blanco-limpio; /* Blanco limpio para la barra */
+ border-bottom: (vars.$border-minimo/6) solid vars.$color-azul-cielo; /* Azul Cielo sutil */
+ height: 80px;
+}
+
+.menu-despegable{
+ display: flex;
+ align-items: center;
+ gap: 20px; /* gap es para añadir espacio entre los elementos */
+}
+
+.li-menu{
+  list-style: none;
+}
+
+.button-menu{
+ color:  vars.$color-texto-oscuro;
+ font-size: calc(#{vars.$font-size-items} + 14px); /* Tamaño más grande para el ícono del menú y el calc permite hacer operaciones */
+ border: none;
+ background: none; 
+ cursor: pointer;  /*cambia el cursor a una mano al pasar sobre el botón*/
+ top: 20px;
+ right: 20px;
+ z-index: 1001; /* Asegura que el botón esté por encima de otros elementos */
+ 
+ .menu-ul{
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   top: 60px; /* debajo del botón */
+   padding: 10px;
+   width: 200px;
+   height: auto;
+   background-color: vars.$color-blanco-limpio;
+   border: (vars.$border-minimo/6) solid vars.$color-azul-cielo;
+   border-radius: vars.$border-medio/2;
+   z-index: 1002;
+   box-shadow: 0 2px 5px vars.$color-negro-suave;
+
+   .menu-item{
+     color: vars.$color-gris-suave;
+     text-transform: uppercase;
+     text-decoration: none;
+     list-style: none;
+     font-family: vars.$font-principal;
+     font-size: vars.$font-size-items;
+     margin: 10px 15px;
+     cursor: pointer;
+
+     &:hover{
+       color: vars.$color-verde-menta; /* Verde Menta como acento en hover */
+      }
+    }
+  }
+}
+ 
+a{
+  text-decoration: none;
+ 
+  .logo{
+   font-Family : vars.$font-principal;
+   color: vars.$color-violeta-medio; /* Violeta Medio para el texto principal */
+   font-size: vars.$font-size-logo;
+   font-weight: bold;
+   &:hover{
+     color: vars.$color-azul-cielo; /* Azul Cielo para el icono */
+    } 
+  }
+}
+
+.btn-registro{
+  font-family: vars.$font-principal;
+  background-color: vars.$color-rosa-salmon; /* Rosa Salmón */
+  border: 1px solid vars.$color-violeta-medio; /* Borde Violeta */
+  color: vars.$color-texto-oscuro; /* Texto oscuro */
+  padding: (vars.$border-maximo/2) (vars.$border-maximo);
+  border-radius: vars.$border-maximo+1;
+  transition: all 0.3s ease; /* Transición suave para hover */
+  
+  &:hover{
+   background-color: vars.$color-violeta-medio; /* Fondo Violeta en hover */
+   color: vars.$color-blanco-limpio; /* Texto blanco en hover */
+   border-color: vars.$color-violeta-medio;
+  } 
+}
+
+.menu-ul{
+  display: none;
+  gap: 20px;
+}
+
+.menu-item{
+ color:vars.$color-gris-suave; /* Gris suave */
+ text-transform: uppercase;
+ text-decoration: none;
+ list-style: none;
+ font-family:vars.$font-principal;
+ font-size:vars.$font-size-items;
+ margin: 0 (vars.$border-medio - 1 );
+ cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el enlace */
+
+  &:hover{  
+    color: vars.$color-verde-menta; /* Verde Menta como acento en hover */
+  }
+}
+
+ /* 
+ El símbolo & se usa en preprocesadores como Sass o SCSS para referirse al selector padre en una regla anidada. 
+ Por ejemplo, dentro de .menu-item:hover, el & representa .menu-item. 
+ Esto solo funciona en entornos que permiten anidación, como Sass, y no en CSS puro.
+*/

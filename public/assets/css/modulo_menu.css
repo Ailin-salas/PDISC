@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* Importa las variables definidas en variables.scss */
+/*importa las fuente de google*/
+@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Staatliches&display=swap");
+.header {
+  background-color: #FFFFFF; /* Blanco limpio para la barra */
+  border-bottom: 2px solid #3AA8C1; /* Azul Cielo sutil */
+  height: 80px;
+}
+
+.menu-despegable {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* gap es para añadir espacio entre los elementos */
+}
+
+.li-menu {
+  list-style: none;
+}
+
+.button-menu {
+  color: #333333;
+  font-size: calc(16px + 14px); /* Tamaño más grande para el ícono del menú y el calc permite hacer operaciones */
+  border: none;
+  background: none;
+  cursor: pointer; /*cambia el cursor a una mano al pasar sobre el botón*/
+  top: 20px;
+  right: 20px;
+  z-index: 1001; /* Asegura que el botón esté por encima de otros elementos */
+}
+.button-menu .menu-ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px; /* debajo del botón */
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  background-color: #FFFFFF;
+  border: 2px solid #3AA8C1;
+  border-radius: 8px;
+  z-index: 1002;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.button-menu .menu-ul .menu-item {
+  color: #555555;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Amarante";
+  font-size: 16px;
+  margin: 10px 15px;
+  cursor: pointer;
+}
+.button-menu .menu-ul .menu-item:hover {
+  color: #90EE90; /* Verde Menta como acento en hover */
+}
+
+a {
+  text-decoration: none;
+}
+a .logo {
+  font-Family: "Amarante";
+  color: #7B68EE; /* Violeta Medio para el texto principal */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+a .logo:hover {
+  color: #3AA8C1; /* Azul Cielo para el icono */
+}
+
+.btn-registro {
+  font-family: "Amarante";
+  background-color: #FDBCB4; /* Rosa Salmón */
+  border: 1px solid #7B68EE; /* Borde Violeta */
+  color: #333333; /* Texto oscuro */
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease; /* Transición suave para hover */
+}
+.btn-registro:hover {
+  background-color: #7B68EE; /* Fondo Violeta en hover */
+  color: #FFFFFF; /* Texto blanco en hover */
+  border-color: #7B68EE;
+}
+
+.menu-ul {
+  display: none;
+  gap: 20px;
+}
+
+.menu-item {
+  color: #555555; /* Gris suave */
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Amarante";
+  font-size: 16px;
+  margin: 0 15px;
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el enlace */
+}
+.menu-item:hover {
+  color: #90EE90; /* Verde Menta como acento en hover */
+}
+
+/* 
+ El símbolo & se usa en preprocesadores como Sass o SCSS para referirse al selector padre en una regla anidada. 
+ Por ejemplo, dentro de .menu-item:hover, el & representa .menu-item. 
+ Esto solo funciona en entornos que permiten anidación, como Sass, y no en CSS puro.
+*/
+
+/*# sourceMappingURL=modulo_menu.css.map */

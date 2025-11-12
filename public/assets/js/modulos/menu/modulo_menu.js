@@ -20,12 +20,6 @@ export async function MenuDespegable() {
     div1.classList.add("menu-despegable", "d-block","d-sm-none" );
     header.append(div1);
 
-    // Botón de menú
-    const buttonmenu = document.createElement("button");
-    buttonmenu.classList.add("button-menu");
-    buttonmenu.textContent = "☰";
-    div1.append(buttonmenu);
-
     // Logo MAPTV
     const a= document.createElement("a");
     a.href="../../../../index.html";
@@ -44,7 +38,6 @@ export async function MenuDespegable() {
     const nav1 = document.createElement("nav");
     nav1.classList.add("menu-ul","d-flex","gap-3","align-items-center","justify-content-center");
 
-
     for (let i = 0; i < links.menu.length; i++) {
       const li = document.createElement("li");
       const a = document.createElement("a");
@@ -57,6 +50,12 @@ export async function MenuDespegable() {
       nav1.append(li);
     }
     div2.append(nav1);
+
+    // Botón de menú
+    const buttonmenu = document.createElement("button");
+    buttonmenu.classList.add("button-menu");
+    buttonmenu.textContent = "☰";
+    div1.append(buttonmenu);
    
    // Menú desplegable
     const nav = document.createElement("nav");

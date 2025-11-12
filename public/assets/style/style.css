@@ -106,10 +106,12 @@ body {
     border: 1px solid #7B68EE;
     color: #fff;
     border-radius: 2rem;
-    transition: all 0.3s ease;
-    &:hover {
-     background-color: #3AA8C1; /* Azul Cielo en hover */
-     border-color: #3AA8C1;
-     color: #fff;
-    }
+    transition: all 0.3s ease;   
 }
+
+.btn-read-more:hover {
+  background-color: #3AA8C1; /* Azul Cielo en hover */
+  border-color: #3AA8C1;
+  color: #fff;
+}
+
